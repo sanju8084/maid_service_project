@@ -16,4 +16,7 @@ app.listen(5000,()=>{
 });
 app.use("/api/user",userRoutes);
 app.use("/api/auth",authRoutes);
+api.use((req,res,next)=>{
+    const statusCode=err.statusCode||500;
+})
 
